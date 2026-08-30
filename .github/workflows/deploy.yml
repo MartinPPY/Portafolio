@@ -41,7 +41,7 @@ jobs:
       - name: Deploy vía FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
-          protocol: ftps
+          protocol: ftp
           server: ${{ secrets.FTP_SERVER }}
           port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.FTP_USERNAME }}
