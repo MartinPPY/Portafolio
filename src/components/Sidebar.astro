@@ -1,0 +1,59 @@
+
+<button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base ms-3 mt-3 text-sm p-2 focus:outline-none inline-flex sm:hidden">
+   <span class="sr-only">Open sidebar</span>
+   <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+   </svg>
+</button>
+
+<aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-full transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+   <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-primary-soft border-e border-default">
+      <a href="/" class="flex items-center gap-3 ps-2.5 mb-5">
+         <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-fg-brand">
+            <span class="material-symbols-outlined text-white">terminal</span>
+         </div>
+         <span class="flex flex-col leading-none">
+            <span class="self-center text-lg text-heading font-semibold whitespace-nowrap">Mi Portafolio</span>
+            <span class="text-xs text-body-subtle uppercase tracking-widest">Automatización & IA</span>
+         </span>
+      </a>
+      <ul class="space-y-2 font-medium">
+         <li>
+            <a href="#inicio" aria-current="page" class="flex items-center px-2 py-1.5 text-fg-brand bg-neutral-tertiary rounded-base group">
+               <span class="material-symbols-outlined text-fg-brand">home</span>
+               <span class="ms-3">Inicio</span>
+            </a>
+         </li>
+         <li>
+            <a href="#sobre-mi" class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+               <span class="material-symbols-outlined group-hover:text-fg-brand">person_search</span>
+               <span class="flex-1 ms-3 whitespace-nowrap">Sobre mí</span>
+            </a>
+         </li>
+         <li>
+            <a href="#experiencia" class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+               <span class="material-symbols-outlined group-hover:text-fg-brand">account_tree</span>
+               <span class="flex-1 ms-3 whitespace-nowrap">Experiencia</span>
+            </a>
+         </li>
+         <li>
+            <a href="#certificaciones" class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+               <span class="material-symbols-outlined group-hover:text-fg-brand">verified</span>
+               <span class="flex-1 ms-3 whitespace-nowrap">Certificaciones</span>
+            </a>
+         </li>
+         <li>
+            <a href="#proyectos" class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+               <span class="material-symbols-outlined group-hover:text-fg-brand">deployed_code</span>
+               <span class="flex-1 ms-3 whitespace-nowrap">Proyectos</span>
+            </a>
+         </li>
+         <li>
+            <a href="#contacto" class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+               <span class="material-symbols-outlined group-hover:text-fg-brand">alternate_email</span>
+               <span class="flex-1 ms-3 whitespace-nowrap">Contacto</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+</aside>

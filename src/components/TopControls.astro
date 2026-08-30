@@ -1,0 +1,36 @@
+---
+---
+
+<div class="fixed top-3 right-3 z-50 flex items-center gap-2">
+   <button
+      id="lang-toggle"
+      type="button"
+      data-tooltip-target="lang-tooltip"
+      class="inline-flex items-center justify-center text-white bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs rounded-base w-8 h-8 focus:outline-none"
+   >
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a15.3 15.3 0 0 1-4-9 15.3 15.3 0 0 1 4-9 15.3 15.3 0 0 1 4 9 15.3 15.3 0 0 1-4 9ZM3.5 9h17M3.5 15h17"/>
+      </svg>
+      <span class="sr-only">Cambiar idioma</span>
+   </button>
+   <div id="lang-tooltip" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-xs">
+      Inglés / Español
+      <div class="tooltip-arrow" data-popper-arrow></div>
+   </div>
+
+   <button
+      id="theme-toggle"
+      type="button"
+      data-tooltip-target="theme-tooltip"
+      class="inline-flex items-center justify-center text-white bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs rounded-base w-8 h-8 focus:outline-none"
+   >
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1-8.313-12.454Z"/>
+      </svg>
+      <span class="sr-only">Cambiar tema</span>
+   </button>
+   <div id="theme-tooltip" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-xs">
+      Modo oscuro / claro
+      <div class="tooltip-arrow" data-popper-arrow></div>
+   </div>
+</div>
