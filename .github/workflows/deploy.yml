@@ -1,9 +1,8 @@
-name: Deploy to cPanel (FTP)
+name: Deploy to cPanel (FTPS)
 
 # Despliegue del portafolio a https://martin-romero.cl/
-# Build con Astro -> subida de ./dist vía FTP (sin cifrado) al hosting cPanel.
-# NOTA: FTP plano no cifra credenciales ni contenido. Migrar a FTPS
-#       (protocol: ftps) en cuanto el hosting lo permita.
+# Build con Astro -> subida de ./dist vía FTPS (FTP con AUTH TLS) al hosting cPanel.
+# Mismo puerto que FTP plano (21): cPanel negocia TLS con AUTH TLS sobre ese puerto.
 
 on:
   push:
@@ -39,10 +38,10 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Deploy vía FTP
+      - name: Deploy vía FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
-          protocol: ftp
+          protocol: ftps
           server: ${{ secrets.FTP_SERVER }}
           port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.FTP_USERNAME }}
